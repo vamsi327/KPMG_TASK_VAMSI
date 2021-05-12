@@ -26,3 +26,18 @@ python task2-python-approach.py <( aws ec2 --region us-east-2 describe-instances
 
 # alternate 3
 task2-Instance-metadata.cs , worthy script - not hand written -but wish i could try this as per the code i observe
+
+# KPMG TASK 3 
+
+ALERNATE SOLUTION
+
+var object = {"a1": { "b1": { "c1": "d1" }}};
+
+console.log("Result at 'a1.b1.c1': ",_.get(object, 'a1.b1.c1'));
+console.log("Result at 'a1.b1.nonexistent key': ",_.get(object, 'a1.b1.nonexistent', "default result"));
+
+var object2 = {"x1":{"y1":{"z1":"a1"}}};
+console.log("Result at 'x1.y1.z1': ",_.get(object2, 'x1.y1.z1'));
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js"></script>
+
