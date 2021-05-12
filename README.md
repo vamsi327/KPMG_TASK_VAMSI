@@ -14,4 +14,6 @@ for inducvidual meta data , i usually  take the response body of this request, p
 
 wget -q -O - http://169.254.169.254/latest/meta-data
 
-or as an alternative we can use mentioned python script.
+# or as an alternative we can use mentioned python script.
+python task2-python-approach.py  <( aws ec2 describe-instances  )
+python task2-python-approach.py  <( aws ec2 --region us-east-2 describe-instances  )
